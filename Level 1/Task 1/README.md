@@ -1,5 +1,5 @@
 # LANDING-PAGE
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+![forthebadge]()
 ![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)
 ![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)
 
