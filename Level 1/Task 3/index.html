@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Temperature Converter<nbsp></nbsp>
+        <i class="fa-solid fa-temperature-three-quarters"></i>
+      </h1>
+    </header>
+    <main>
+      <form onsubmit="event.preventDefault()">
+        <label for="conversion">
+          Convert
+          <select name="temp-unit1" id="temp-unit1" required>
+            <option value="">Select a temperature unit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahren">Fahrenheit</option>
+          </select>
+          to
+          <select name="temp-unit2" id="temp-unit2" required>
+            <option value="">Select a temperature unit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahren">Fahrenheit</option>
+          </select>
+        </label>
+        <input
+          type="number"
+          id="temperature"
+          placeholder="Enter temperature value"
+          step="0.01"
+          required
+        />
+        <button type="submit" id="convert-btn">Convert</button>
+        <p id="error"></p>
+      </form>
+      <div class="thermometer">
+        <img
+          src="https://i.postimg.cc/tJs1FzgF/thermometer.png"
+          alt="thermometer"
+        />
+        <p class="display">--- <span class="unit"></span></p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
